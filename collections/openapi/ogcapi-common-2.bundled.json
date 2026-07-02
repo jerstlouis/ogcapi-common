@@ -565,12 +565,12 @@
               },
               "minCellSize": {
                 "title": "Minimum cell size for the collection",
-                "description": "Minimum cell size for usage of the collection.",
+                "description": "Minimum cell size for usage of the collection, in degrees of latitude for data referenced to Earth.",
                 "type": "number"
               },
               "maxCellSize": {
                 "title": "Maximum cell size for the collection",
-                "description": "Maximum cell size for usage of the collection.",
+                "description": "Maximum cell size for usage of the collection, in degrees of latitude for data referenced to Earth.",
                 "type": "number"
               },
               "created": {
@@ -689,7 +689,7 @@
                   },
                   "grid": {
                     "title": "Grid description",
-                    "description": "Provides information about the limited availability of data within the collection organized\nas a grid (regular or irregular) along each spatial dimension.",
+                    "description": "Provides information about the limited availability of data within the collection organized\nas a grid (regular or irregular) along each spatial dimension.\nAll units within the spatial grid object are specified in the `storageCrs`, defaulting to CRS84 if not specified.",
                     "type": "array",
                     "minItems": 2,
                     "maxItems": 3,

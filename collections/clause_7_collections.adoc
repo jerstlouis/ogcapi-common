@@ -167,7 +167,7 @@ The extent property defines a spatiotemporal envelope that encompasses the geosp
 The temporal reference system (`trs`) specified in the `temporal` property of the `extent` defines not only the reference system of the `interval`,
 but also the reference system for the primary temporal dimension of the data.
 
-For the spatial extent, the `crs` specified in the `spatial` property of the `extent` defines only the coordinate reference system of the `bbox`.
+For the spatial extent, the `crs` specified in the `spatial` property of the `extent` defines only the coordinate reference system of the `bbox`, `minCellSize` and `maxCellSize`.
 For data referenced to Earth, this `crs` will always be [OGC:CRS84] or [OGC:CRS84h].
 The native CRS of the data is specified separately in the `storageCrs` property of the collection description.
 For some access mechanisms, this native CRS corresponds to the default output CRS.
@@ -239,6 +239,7 @@ or CRS JSON object.
 | Array of 2 or 3 (<<regulargrid-properties,RegularGrid>> or <<irregulargrid-properties,IrregularGrid>>)
 | _(if implementing <<rc-uad-collections-section,Uniform Additional Dimensions Collections>>)_ Grid description providing information about the limited availability of data within the collection
 organized as a grid (regular or irregular) along each spatial dimension.
+All units within the spatial grid object are specified in the `storageCrs`, defaulting to CRS84 if not specified.
 |===
 
 [#temporalextent-properties,reftext='{table-caption} {counter:table-num}']

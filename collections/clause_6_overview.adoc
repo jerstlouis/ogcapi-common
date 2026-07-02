@@ -226,11 +226,10 @@ new conflicting properties (with same name but different semantics).
 
 | **minCellSize**
 | Real
-| Minimum cell size for usage of the collection
-
+| Minimum cell size for usage of the collection, in degrees of latitude ^1^ for data referenced to Earth
 | **maxCellSize**
 | Real
-| Maximum cell size for usage of the collection
+| Maximum cell size for usage of the collection, in degrees of latitude ^1^ for data referenced to Earth
 
 | **created**
 | String (`date-time` format)
@@ -239,6 +238,9 @@ new conflicting properties (with same name but different semantics).
 | **updated**
 | String (`date-time` format)
 | Timestamp of the last change/revision to the data in the collection
+3+| ^1^ The convert to meters, the cell size is simply converted from degrees to radians and multiplied by the equatorial radius in meters.
+For example, for the WGS84 ellipsoid, metersCellSize = cellSize * Pi / 180 * 6,378,137 m = cellSize * ~111,319.4908 meters / degree.
+The cell size is always in degrees to facilitate discovery and comparison between collections with different native CRS (`storageCrs`).
 |===
 
 NOTE: Refer to <<annex-uml-tables,Annex B>> for the full model class tables describing the custom data types of these properties.
