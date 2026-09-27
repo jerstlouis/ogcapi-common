@@ -2,7 +2,7 @@
 
 The OGC API - Common - Part 4: Discovery Within Many Collections Standard extends the `/collections` endpoint defined by the
 OGC API - Common - Part 2: Geospatial Data Standard with query parameters.
-These query parameters facilitate the discovery of relevant collections of data from API deployments offering a large numbers of collections.
+These query parameters facilitate the discovery of relevant collections of data from API deployments offering a large number of collections.
 
 The extended querying capabilities specified are basic search (including text search, paging, filtering by Area/Time/Resolution of Interest), sorting,
 advanced filtering using the OGC Common Query Language (CQL2), as well listing only collections within a hierarchical parent collection.
