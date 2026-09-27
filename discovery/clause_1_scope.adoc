@@ -5,7 +5,7 @@ OGC API - Common - Part 2: Geospatial Data Standard with query parameters.
 These query parameters facilitate the discovery of relevant collections of data from API deployments offering a large number of collections.
 
 The extended querying capabilities specified are basic search (including text search, paging, filtering by Area/Time/Resolution of Interest), sorting,
-advanced filtering using the OGC Common Query Language (CQL2), as well listing only collections within a hierarchical parent collection.
+advanced filtering using the OGC Common Query Language (CQL2), as well as listing only collections within a hierarchical parent collection.
 
 As with Part 2, the capabilities to list and describe collections is agnostic of how the data contained in these collections is stored or accessed.
 Data access mechanisms are defined in seperate OGC Web API Standards.
